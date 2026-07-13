@@ -1,0 +1,9 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+terraform.tfvars.json
+*.pem
+*.key
+terra-key
+terra-key.pub
