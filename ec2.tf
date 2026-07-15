@@ -1,8 +1,8 @@
 # Create Key Pair
 resource "aws_key_pair" "deployer" {
   key_name   = "tws-terra-key"
-  public_key = file("C:/Users/DELL/.ssh/id_rsa.pub")
-}
+  public_key = file("C:/Users/DELL/OneDrive/Desktop/terraform/terra-key.pub")
+  }
 
 # Use the default VPC
 resource "aws_default_vpc" "default" {
@@ -46,7 +46,7 @@ resource "aws_security_group" "twsecurity" {
 # Create EC2 Instance
 resource "aws_instance" "my_instance" {
   ami                    = "ami-01a00762f46d584a1" # Verify this AMI is valid for ap-south-1
-  instance_type          = "t2.micro"
+  instance_type          = "t3.micro"
   key_name               = aws_key_pair.deployer.key_name
   vpc_security_group_ids = [aws_security_group.twsecurity.id]
 

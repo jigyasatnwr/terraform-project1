@@ -1,6 +1,7 @@
 resource "aws_s3_bucket" "my-bucket" {
-  bucket = "jigyasa"
+  bucket = "jigyasa-tanwar-terraform-2026"
+
   tags = {
-    Name = "jigyasa"
+    Name = "jigyasa-tanwar-terraform-2026"
   }
 }
