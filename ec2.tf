@@ -43,7 +43,7 @@ resource "aws_security_group" "twsecurity" {
   }
 }
 
-# Create EC2 Instance
+# Creating EC2 Instance
 resource "aws_instance" "my_instance" {
   ami                    = "ami-01a00762f46d584a1" # Verify this AMI is valid for ap-south-1
   instance_type          = "t3.micro"
