@@ -54,3 +54,7 @@ resource "aws_instance" "my_instance" {
     Name = "terra-automate"
   }
 }
+
+#terraform state list --> give list of all resources
+#terraform destroy --tagrget = instace name --> destroy given insance ; use target destroy to destroy all instances
+# modules --> can make reusable template of resources (multi enviroment architecture)
